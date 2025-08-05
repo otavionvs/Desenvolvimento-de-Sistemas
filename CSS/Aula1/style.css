@@ -1,0 +1,62 @@
+/* Seletor de todos os elementos */
+*{
+    margin: 0;
+}
+
+/* Seletor de Elemento */
+h3{
+    color: yellow;
+    font-weight: 100;
+}
+
+/* Seletor de Classe */
+.texto{
+    /* Altera a cor do texto */
+    color: brown;
+    /* Altera o tamanho do texto */
+    font-size: large;
+    /* Altera a posição do texto horizontalmente */
+    text-align: center;
+    /* Defini a fonte do texto */
+    font-family: impact;
+    /* Altera o peso/gramatura do texto */
+    font-weight: 100;
+    /* Altera a decoração do texto */
+    text-decoration: underline;
+}
+
+/* Seletor de Id */
+#texto{
+    color: red;
+    font-size: medium;
+    text-align: end;
+}
+
+/* Atributos de Espaçamento */
+.box{
+    /* Define a largura - vw */
+    width: 200px;
+    /* Define a altura - vh */
+    height: 200px;
+    /* Define o espaço externo - margem */
+    margin: 15px 5px 10px 20px;
+    /* Define o espaço interno */
+    padding: 10px;
+    /* Define a borda */
+    border: 1px solid rgb(175, 50, 50);
+}
+
+.position{
+    /* A forma de posicionamento */
+    display: flex;
+    /* Posicionar verticalmente */
+    align-items: center;
+    /* Posicionar horizontalmente */
+    justify-content: center;
+}
+
+.position2{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
