@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Não utilizar nesse lugar
+    </script>
+</head>
+<body>
+    <p id="Paragrafo">Script que escreva olá:</p>
+    <p id="id">Seletor de id</p>
+    <p class="classe">Seletor de classe 1</p>
+    <p class="classe">Seletor de classe 2</p>
+    <h1 id="text">Text</h1>
+    <div id="div">
+        Texto de Exemplo
+    </div>
+
+    <img id="bolo" src="https://static.itdg.com.br/images/360-240/cfaeadb92ac4a77e9b0ebaf46816c7e2/68843-320646-original.jpg">
+
+    <button id="fundo">Trocar a cor de Fundo</button>
+    <button onclick="trocar()">Troca de Fundo 2</button>
+    
+    <script>
+        console.log("Hello World!");
+        //console.warn("Aviso!");
+        //console.error("Erro");
+
+        document.write("Olá");
+
+        //Seleção de elementos
+        //Por ID
+        const p = document.getElementById("Paragrafo");
+        console.log(p);
+        //Por seletor CSS
+        const id = document.querySelector("#id");
+        const classe = document.querySelector(".classe");
+        console.log(id);
+        console.log(classe);
+        const classes = document.querySelectorAll(".classe");
+        console.log(classes);
+        //Pega o texto do elemento
+        console.log(id.innerText);
+
+        //Manipulação de HTML
+        let text = document.getElementById("text");
+        console.log(text.textContent);
+        //Altera somente o texto
+        text.textContent = "Hello world Manipulado!";
+        //Altera o html de dentro do elemento
+        let div = document.getElementById("div");
+        console.log(div.innerHTML); 
+        div.innerHTML = "<h3>Manipulação de HTML</h3>";
+        console.log(div.innerHTML);
+
+        //Manipulação de Atributos
+        let imgBolo = document.getElementById("bolo");
+        console.log(imgBolo.getAttribute("src"));
+        //Altera o atributo de um elemento
+        //setAttribute("atributo", "novoValor")
+        imgBolo.setAttribute("src", "https://static.itdg.com.br/images/360-240/224a7ba1ed0cee54095ef84f642a1fb8/241648-original.jpg");
+        imgBolo.setAttribute("alt", "Imagem de um bolo");
+        //Remover atributos
+        imgBolo.removeAttribute("alt");
+
+        //Manipulação do css
+        imgBolo.style.borderRadius = "100px";
+        imgBolo.style.border = "5px solid black";
+
+        //Eventos
+        let fundo = document.getElementById("fundo");
+        let troca = true;
+        fundo.addEventListener("click", () => {
+            if (troca) {
+            document.body.style.backgroundColor="blue";
+            troca = false;
+            } else {
+            document.body.style.backgroundColor="red";
+            troca = true;
+            }
+        });
+
+        function trocar(){
+            document.body.style.backgroundColor="green";
+        }
+
+    </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
