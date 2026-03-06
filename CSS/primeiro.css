@@ -1,0 +1,24 @@
+        * {
+            font-weight: bold;
+        }
+
+        p {
+            color: red;
+            text-align: center;
+        }
+
+        #corVerde {
+            color: green;
+        }
+
+        .corRoxo {
+            color: purple;
+        }
+
+        .textoFim {
+            text-align: end;
+        }
+
+        .textoFim h1 {
+            color: gray;
+        }
