@@ -16,7 +16,8 @@ fetch('http://localhost:3001/usuario')
             console.log(element)
             listaUsuario.innerHTML += `
             <li class='list-group-item'>
-                Nome: ${element.nome} Idade: ${element.idade}
+                <h5>Nome: ${element.nome} Idade: ${element.idade} </h5>
+                <a href="./editarUsuario/index.html?id=${element.id}" class="btn btn-primary">Atualizar</a>
             </li>
             `
         });

@@ -31,7 +31,7 @@ app.get('/usuario/:id', async (req, res) => {
         if (rows.length == 0) {
             return res.status(404).send("Usuário não encontrado!")
         }
-        res.json(rows)
+        res.json(rows[0])
     } catch (e) {
         console.log(e);
         res.status(500).send("Erro ao buscar usuario!")

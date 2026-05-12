@@ -2,8 +2,22 @@ main{
     height: 100vh;
 }
 
+li{
+    width: 30vw;
+    display: flex !important;
+    justify-content: space-between;
+}
+
 .centro{
     display: flex;
     justify-content: center;
     align-items: center;
+    h1{
+        text-align: center;
+    }
+}
+
+.cadastro{
+    width: 30vw;
+    margin: 2vh 0px;
 }
